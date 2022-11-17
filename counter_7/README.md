@@ -63,4 +63,9 @@ Widget `Navigation` akan membuat setiap routing halaman yang dibutuhkan ke dalam
 
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. Membuat drawer.dart yang berisi widget `Drawer` dengan routing ke counter_7, add_budget (form), dan data (data dari form)
+2. Membuat form dengan input berupa String untuk judul, int untuk nominal, String untuk jenis, dan DateTime untuk tanggal
+3. Judul dan nominal menggunakan `TextFormField`, jenis menggunakan `DropdownButtonFormField`, dan DateField menggunakan `showDatePicker`
+4. Setelah itu buat handler yang menerima judul, nominal, jenis, dan date untuk ditambahkan ke static list
+6. Iterasi static list yang menyimpan list data yang sudah ditambahkan dan tampilkan di listTile pada file `data.dart`
 
