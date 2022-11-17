@@ -38,12 +38,29 @@ Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu 
 # Tugas 8: Flutter Form
 
 ## Jelaskan perbedaan `Navigator.push` dan `Navigator.pushReplacement`
+Kedua `Navigator` tersebut sama-sama membuat aplikasi berganti halaman ke dalam suatu halaman baru. Bedanya adalah `Navigator.push` akan menambah history baru pada stack, sedangkan `Navigator.pushReplacement` hanya akan mengganti history halaman sebelumnya dengan halaman baru tersebut.
 
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+Widget yang digunakan ada yang sama dengan tugas sebelumnya, dengan tambahan:
+1. `ListTile`: Baris dengan suatu ketinggian yang biasanya memiliki sebuah tulisan dan icon pada sebelum dan sesudahnya
+2. `SingleChildScrollView`: Untuk membuat suatu widget dapat di-scroll
+3. `TextFormField`: Field formulir yang dapat diisi dengan tulisan
+4. `TextButton`: Tombol yang berisi teks
+5. `DropdownButton`: Tombol untuk memilih salah satu item dari daftar item yang ada
+6. `DropdownMenuItem`: Pilihan yang ada di dalam daftar DropdownButton
+7. `Icon`: Ikon yang berasal dari object `Icons` yang terdefinisi.
 
 ## Sebutkan jenis-jenis event yang ada pada Flutter (contoh: `onPressed`).
+- `onPressed`
+- `onChanged`
+- `onSaved`
+- `onEditingComplete`
+- `onSubmitted`
+- `onTap`
 
 ## Jelaskan bagaimana cara kerja `Navigator` dalam "mengganti" halaman dari aplikasi Flutter.
+Widget `Navigation` akan membuat setiap routing halaman yang dibutuhkan ke dalam sebuah stack, yang mana widget tersebut dapat mengganti dari satu halaman ke halaman lain di dalam stack dengan menggunakan animasi yang sesuai di target platform-nya.
+
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
