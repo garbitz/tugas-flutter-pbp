@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:counter_7/add_budget.dart';
 import 'package:counter_7/main.dart';
+import 'package:counter_7/drawer.dart';
+
 
 class MyDataPage extends StatefulWidget {
   const MyDataPage({super.key});
@@ -18,52 +20,14 @@ class _MyDataState extends State<MyDataPage> {
           title: Text("Form"),
         ),
         // Menambahkan drawer menu
-        drawer: Drawer(
-          child: Column(
-            children: [
-              // Menambahkan clickable menu
-              ListTile(
-                title: const Text('counter_7'),
-                onTap: () {
-                  // Route menu ke halaman utama
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) =>
-                            const MyHomePage(title: "counter_7")),
-                  );
-                },
-              ),
-              ListTile(
-                title: const Text('Tambah Budget'),
-                onTap: () {
-                  // Route menu ke halaman form
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => const MyFormPage()),
-                  );
-                },
-              ),
-              ListTile(
-                title: const Text('Data Budget'),
-                onTap: () {
-                  // Route menu ke halaman form
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => const MyDataPage()),
-                  );
-                },
-              ),
-            ],
-          ),
-        ),
+        drawer: SideBar(),
         body: ListView.builder(
           itemCount: Add.contain.length,
           itemBuilder: (context, index) {
             final item = Add.contain[index];
             return ListTile(
               title:Text(item.judul),subtitle:Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children:[Text(item.nominal.toString()), Text(item.tipe)]),
+                children:[Text("Nominal : "+item.nominal.toString()), Text("Tipe : "+item.tipe) ,Text("Tanggal : "+item.date.toString().substring(0,10))]),
 
             );
           },
