@@ -34,3 +34,16 @@ Pemrograman Berbasis Platform (CSGE602022) - diselenggarakan oleh Fakultas Ilmu 
 - *If-else* untuk menunjukkan tombol decrement kalau `_counter > 0`
 - Ubah judul halaman.
 - Add, commit, dan push perubahan yang ada.
+
+# Tugas 8: Flutter Form
+
+## Jelaskan perbedaan `Navigator.push` dan `Navigator.pushReplacement`
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+## Sebutkan jenis-jenis event yang ada pada Flutter (contoh: `onPressed`).
+
+## Jelaskan bagaimana cara kerja `Navigator` dalam "mengganti" halaman dari aplikasi Flutter.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
