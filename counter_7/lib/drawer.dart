@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:counter_7/add_budget.dart';
 import 'package:counter_7/main.dart';
 import 'package:counter_7/data.dart';
-
+import 'package:counter_7/watchlist.dart';
 
 class SideBar extends StatelessWidget {
     const SideBar();
@@ -41,6 +41,16 @@ class SideBar extends StatelessWidget {
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(builder: (context) => const MyDataPage()),
+                );
+                },
+            ),
+            ListTile(
+                title: const Text('Watchlist'),
+                onTap: () {
+                // Route menu ke halaman form
+                Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => const WatchListPage()),
                 );
                 },
             ),
