@@ -69,3 +69,17 @@ Widget `Navigation` akan membuat setiap routing halaman yang dibutuhkan ke dalam
 4. Setelah itu buat handler yang menerima judul, nominal, jenis, dan date untuk ditambahkan ke static list
 6. Iterasi static list yang menyimpan list data yang sudah ditambahkan dan tampilkan di listTile pada file `data.dart`
 
+
+# Tugas 8: Flutter Form
+
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+Widget yang digunakan ada yang sama dengan tugas sebelumnya, dengan tambahan:
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+
