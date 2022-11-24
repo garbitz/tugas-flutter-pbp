@@ -70,16 +70,30 @@ Widget `Navigation` akan membuat setiap routing halaman yang dibutuhkan ke dalam
 6. Iterasi static list yang menyimpan list data yang sudah ditambahkan dan tampilkan di listTile pada file `data.dart`
 
 
-# Tugas 8: Flutter Form
+# Tugas 9: Integrasi Web Service pada Flutter
 
 ## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Bisa saja, tapi metode tersebut tidak lebih baik daripada membuat model sebelum pengambilan data JSON karena type yang kita deklarasikan menjadi "tidak berguna" akibat value json yang berupa dynamic sehingga error akan lebih mudah terjadi pada app kita.
 
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
 Widget yang digunakan ada yang sama dengan tugas sebelumnya, dengan tambahan:
+- FutureBuilder: Menampilkan data dari Future response API
+- CircularProgressIndicator: Loading circle bar
+- Card: Menampilkan data dalam bentuk kartu
 
 ## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
-
+1. Membuat model Watchlist
+2. Fetch JSON dari API
+3. Menyimpan JSON ke dalam model Watchlist
+4. Menampilkan data dari model Watchlist
 
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+1. set internet android permission pada `AndroidManifest.xml`
+2. Membuat models untuk objek JSON
+3. Membuat fungsi yang melakukan fetching data ke API
+4. Menggunakan `FutureBuilder` untuk render data yang di fetch
+5. Membuat halaman detail
+6. Membuat integrase dengan drawer
+7. Menambahkan `http: any` pada `dependencies` dalam `pubspec.yaml`
 
 
